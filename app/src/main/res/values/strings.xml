@@ -2,4 +2,7 @@
     <string name="app_name">AndroidLayoutsDemoApp</string>
     <string name="title_text_view">Layouts Demo</string>
     <string name="btn_text">Login</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="signup">Sign up</string>
 </resources>

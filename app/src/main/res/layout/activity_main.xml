@@ -31,11 +31,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
     
-    <RelativeLayout
-        android:id="@+id/inputRL"
+    <LinearLayout
+        android:id="@+id/loginLL"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:weightSum="3"
+        android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/titleIV"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -45,24 +47,57 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="20dp"
-            />
+            android:layout_weight="1"/>
 
         <EditText
             android:id="@+id/passwordET"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/usernameET"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"/>
 
         <Button
             android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/passwordET"
             android:text="@string/btn_text"
             android:textStyle="bold"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:layout_weight="1"/>
         
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/extrasRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/loginLL">
+
+        <TextView
+            android:id="@+id/forgotPasswordTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/noAccountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_account"
+            android:layout_below="@+id/forgotPasswordTV"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/noAccountTV"
+            android:text="@string/signup"/>
+
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
