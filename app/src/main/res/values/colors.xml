@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="login_color">#FAF1DD</color>
+    <color name="login_button">#F15C2F</color>
+    <color name="forgot_pass">#7F5CBD</color>
+    <color name="main_background"></color>
 </resources>
